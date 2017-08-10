@@ -1,0 +1,62 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Gutemberg</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link rel="icon" type="image/png" href="/static/img/Logo.png" />
+
+    <!-- Importation du style de l'application -->
+    <link rel="stylesheet" href="/static/CSS/main.css">
+
+    <!-- Importation des dépendances CSS -->
+    <link rel="stylesheet" href="/static/CSS/vendor/vex.css">
+    <link rel="stylesheet" href="/static/CSS/vendor/vex-theme-wireframe.css" />
+
+
+    <!-- Importation des tags -->
+    <script src="tags/Header.tag" type="riot/tag"></script>
+    <script src="tags/Footer.tag" type="riot/tag"></script>
+    <script src="tags/Error.tag" type="riot/tag"></script>
+
+    <script src="tags/Chapter/Chapter.tag" type="riot/tag"></script>
+    <script src="tags/Chapter/ChapterEdit.tag" type="riot/tag"></script>
+    <script src="tags/Chapter/ChapterEditForm.tag" type="riot/tag"></script>
+    <script src="tags/Chapter/Chapters.tag" type="riot/tag"></script>
+
+
+    <!-- include riot.js and the compiler, et les dépendances JS-->
+    <script src="/static/JS/vendor/riot+compiler.min.js"></script>
+    <script src="/static/JS/vendor/route.min.js"></script>
+    <script src="/static/JS/vendor/ajax.min.js"></script>
+    <script src="/static/JS/vendor/md5.js"></script>
+    <script src="/static/JS/vendor/cookie.js"></script>
+    <script src="/static/JS/vendor/jquery-3.2.1.min.js"></script>
+    <script src="/static/JS/vendor/vex.combined.min.js"></script>
+    <script src="/static/JS/vendor/validatinator.min.js"></script>
+
+
+    <!-- Importation du coeur de l'application-->
+    <script src="/static/JS/global.js"></script>
+
+    <script>
+        vex.defaultOptions.className = 'vex-theme-wireframe'
+    </script>
+
+
+
+    <!-- Définition des routes -->
+    <script>
+        window.addEventListener("load", function () {
+            Router.GetInstance().start();
+        });
+    </script>
+</head>
+
+<body>
+    <noscript>Cette application ne peut fonctionner sans Javascript. Veuillez l'activer, mettre à jour votre navigateur ou essayer
+        à nouveau depuis un autre navigateur.</noscript>
+    <div id="app"></div>
+</body>
+
+</html>
