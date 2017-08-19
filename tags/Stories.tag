@@ -1,6 +1,11 @@
-<app-chapters>
-    <app-chapteritem each="{ chapter in chapters }" chapter="{ chapter }"></app-chapteritem>
+<app-stories>
+    <app-header></app-header>
 
+    <div class="content">
+        <app-chapters chapters="{ chapters }"></app-chapters>
+    </div>
+
+    <app-footer></app-footer>
     <script>
         var tag = this;
 
@@ -9,9 +14,8 @@
         tag.on("before-mount", function()
         {
             tag.chapters = tag.opts.chapters;
-
             if(tag.chapters == null)
                 throw new Error("Chapters cant be null.");
-        })
+        });
     </script>
-</app-chapters>
+</app-stories>

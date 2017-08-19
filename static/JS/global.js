@@ -1,4 +1,11 @@
 class Adapter {
+    static adaptChapter(chapter) {
+        if (chapter.adapted == true)
+            return chapter;
+        chapter.resume = chapter.content.slice(0, 140);
+        chapter.adapted = true;
+        return chapter;
+    }
 }
 class ErrorHandler {
     static GetInstance() {
@@ -191,7 +198,7 @@ class App {
         e.remove();
     }
 }
-App.Address = "http://localhost:8080/API";
+App.Address = "http://localhost:8080/api";
 App.Page = null;
 App.PopUp = null;
 /**
@@ -206,6 +213,49 @@ class Router {
     }
     start() {
         route.start(true);
+    }
+    showStories() {
+        var filters = {
+            "Chapter_id": "null",
+            "public": 1
+        };
+        var request = App.request(App.Address + "/getchapters", {
+            "filters": JSON.stringify(filters)
+        });
+        request.then(function (response) {
+            App.changePage("app-stories", {
+                "chapters": response.data
+            });
+        });
+        request.catch(function (error) {
+            if (error instanceof Error)
+                route("/error/" + error.message);
+        });
+    }
+    showChapter(id) {
+        var requestChapter = App.request(App.Address + "/getchapter", {
+            "id": id
+        });
+        var filters = {
+            "Chapter_id": id
+        };
+        var requestNext = App.request(App.Address + "/getchapters", {
+            "filters": JSON.stringify(filters)
+        });
+        var request = Promise.all([requestChapter, requestNext]);
+        request.then(function (responses) {
+            var opts = {
+                "chapter": responses[0].data,
+                "next": null
+            };
+            if (responses[1].data.length > 0)
+                opts.next = responses[1].data[0];
+            App.changePage("app-chapter", opts);
+        });
+        request.catch(function (error) {
+            if (error instanceof Error)
+                route("/error/" + error.message);
+        });
     }
     addChapter() {
         App.changePage("app-chapteredit", {
@@ -239,9 +289,11 @@ class Router {
     }
     setRoutes() {
         let self = this;
+        route("/stories", self.showStories);
         route("/chapter/add/*", self.addChapterAfter);
         route("/chapter/add", self.addChapter);
         route("/chapter/edit/*", self.editChapter);
+        route("/chapter/*", self.showChapter);
         route("/error/*", self.error);
         route("/error", self.error);
     }

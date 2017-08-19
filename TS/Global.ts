@@ -1,6 +1,6 @@
 class App
 {
-    public static Address : string = "http://localhost:8080/API";
+    public static Address : string = "http://localhost:8080/api";
 
 
     private static Page = null;

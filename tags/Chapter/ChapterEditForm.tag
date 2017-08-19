@@ -41,7 +41,7 @@
                 "edit-chapter": {
                     "fullname" : "required|maxLength:400",
                     "content" : "required|minLength: 100|maxLength:9000",
-                    "mail" : "maxLength:100|email",
+                    "mail" : "maxLength:100",
                     "username" : "required|minLength:5|maxLength:100"
                 }
             });
@@ -68,11 +68,9 @@
 
             var address = App.Address + "/updatechapter";
 
-            if(tag.chapter.id === null)
+            if(tag.chapter.id == null)
                 address = App.Address + "/addchapter";
 
-            console.log(tag.chapter);
-            return;
 
             var request = App.request(address, tag.chapter);
             request.then(function(response)
