@@ -7,6 +7,13 @@ app-chapter, div[data-is=app-chapter]
     margin-top: -$space-big - 1;
   }
 
+  p
+  {
+    word-break: break-all;
+    word-wrap: break-word;
+    text-align: justify;
+  }
+
   div.current
   {
     $height: 100px;
@@ -66,6 +73,7 @@ app-chapter, div[data-is=app-chapter]
     padding: $space-normal;
     border-bottom: 1px dotted $color-front-leaf;
     margin-bottom: $space-normal;
+    background-color: $color-back-secondary;
   }
 
   div.next

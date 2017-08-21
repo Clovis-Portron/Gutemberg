@@ -1,0 +1,35 @@
+app-chaptereditform
+{
+
+  form
+  {
+    &>div
+    {
+      margin-bottom: $space-normal;
+
+      input[type=text], textarea
+      {
+        width: 100%;
+      }
+
+
+    }
+  }
+
+  label
+  {
+    display: block;
+    margin-bottom: $space-small;
+  }
+
+  textarea
+  {
+    height: 200px;
+  }
+
+  input[type=submit], input[type=button]
+  {
+    width: 100%;
+  }
+
+}

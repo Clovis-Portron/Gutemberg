@@ -1,6 +1,6 @@
 <app-error>
     <app-header></app-header>
-    <div>
+    <div class="content">
         <h1>Ooops... Une erreur s'est produite</h1>
         <div>
             <p>

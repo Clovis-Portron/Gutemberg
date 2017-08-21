@@ -16,8 +16,7 @@
             </div>
         </div>
         <div>
-            <p>
-                { chapter.content }
+            <p ref="content">
             </p>
         </div>
         <div class="next" if="{ next != null }">
@@ -43,6 +42,11 @@
             tag.next = tag.opts.next;
             if(tag.chapter == null)
                 throw new Error("Chapter cant be null.");
+        });
+
+        tag.on("mount", function()
+        {
+            tag.refs.content.innerHTML = tag.chapter.content;
         });
 
         tag.createNext = function()

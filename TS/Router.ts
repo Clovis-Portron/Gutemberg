@@ -142,5 +142,8 @@ class Router
         route("/error/*", self.error);
         route("/error", self.error);
 
+        route("/", self.showStories);
+        route("", self.showStories);
+
     }
 }

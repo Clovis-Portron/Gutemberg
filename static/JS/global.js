@@ -3,6 +3,7 @@ class Adapter {
         if (chapter.adapted == true)
             return chapter;
         chapter.resume = chapter.content.slice(0, 140);
+        chapter.content = chapter.content.replace(/↵|(\n)/g, "<br>");
         chapter.adapted = true;
         return chapter;
     }
@@ -307,6 +308,8 @@ class Router {
         });
         route("/error/*", self.error);
         route("/error", self.error);
+        route("/", self.showStories);
+        route("", self.showStories);
     }
 }
 Router.Instance = new Router();

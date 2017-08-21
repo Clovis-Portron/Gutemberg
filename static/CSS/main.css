@@ -2,9 +2,25 @@
 /**
  Importation des polices
 **/
+@font-face {
+  font-family: "Raleway";
+  src: url("/static/fonts/Raleway-Regular.ttf"); }
+
+@font-face {
+  font-family: "Lobster";
+  src: url("/static/fonts/LobsterTwo-Regular.ttf"); }
+
 /**
  Importation des polices
 **/
+@font-face {
+  font-family: "Raleway";
+  src: url("/static/fonts/Raleway-Regular.ttf"); }
+
+@font-face {
+  font-family: "Lobster";
+  src: url("/static/fonts/LobsterTwo-Regular.ttf"); }
+
 .invisible {
   display: none !important; }
 
@@ -50,7 +66,7 @@ div#popup {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #808F28;
+  background-color: #173e43;
   border-radius: 2px;
   z-index: 1;
   border: 1px solid #f2be8b;
@@ -71,7 +87,7 @@ div#popup {
     padding: 8px;
     font-size: 20px;
     background-color: #f2be8b;
-    color: #808F28; }
+    color: #173e43; }
   div#popup div.close {
     content: "🞩";
     display: inline-block;
@@ -84,7 +100,7 @@ div#popup {
     text-align: right;
     padding-top: 8px;
     padding-right: 8px;
-    color: #808F28;
+    color: #173e43;
     cursor: pointer; }
 
 h1 {
@@ -112,7 +128,7 @@ img.profile {
   width: 50px;
   height: 50px;
   background-color: #f2be8b;
-  color: #808F28;
+  color: #173e43;
   border-radius: 100%;
   line-height: 50px;
   text-align: center;
@@ -123,10 +139,10 @@ p {
   font-family: "Raleway"; }
 
 input[type=button], button, input[type=submit] {
-  background-color: #94A520;
+  background-color: #3fb0ac;
   color: #ffffff;
   border-radius: 2px;
-  border: 2px solid #b6cb27;
+  border: 2px solid #59c4c0;
   padding: 8px;
   cursor: pointer;
   transition: all 0.2s ease; }
@@ -136,16 +152,17 @@ input[type=button], button, input[type=submit] {
 app-chapteritem {
   display: inline-block;
   min-width: 230px;
-  border: 1px dotted #94a520;
-  box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.05); }
+  border: 1px dotted #3fb0ac;
+  box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.05);
+  background-color: #FFF; }
   app-chapteritem > div {
     overflow: hidden; }
     app-chapteritem > div h1 {
       text-align: left;
       padding: 8px;
-      background-color: #808F28;
+      background-color: #173e43;
       color: #ffffff;
-      border-bottom: 1px solid rgba(148, 165, 32, 0.3); }
+      border-bottom: 1px solid rgba(63, 176, 172, 0.3); }
     app-chapteritem > div > div {
       padding: 8px; }
   app-chapteritem p {
@@ -166,10 +183,14 @@ app-chapter, div[data-is=app-chapter] {
   z-index: 1; }
   app-chapter > div, div[data-is=app-chapter] > div {
     margin-top: -41px; }
+  app-chapter p, div[data-is=app-chapter] p {
+    word-break: break-all;
+    word-wrap: break-word;
+    text-align: justify; }
   app-chapter div.current, div[data-is=app-chapter] div.current {
     width: 100%;
     height: 100px;
-    background-color: #808F28; }
+    background-color: #173e43; }
     app-chapter div.current > div, div[data-is=app-chapter] div.current > div {
       display: inline-block;
       width: 100%;
@@ -189,34 +210,69 @@ app-chapter, div[data-is=app-chapter] {
         height: 100%;
         border: 0; }
       app-chapter div.current > div:first-of-type, app-chapter div.current > div:last-of-type, div[data-is=app-chapter] div.current > div:first-of-type, div[data-is=app-chapter] div.current > div:last-of-type {
-        background-color: #94A520; }
+        background-color: #3fb0ac; }
       app-chapter div.current > div:last-of-type, div[data-is=app-chapter] div.current > div:last-of-type {
         position: absolute;
         height: 100px;
         right: 0; }
   app-chapter div.current + div, div[data-is=app-chapter] div.current + div {
     padding: 20px;
-    border-bottom: 1px dotted #94A520;
-    margin-bottom: 20px; }
+    border-bottom: 1px dotted #3fb0ac;
+    margin-bottom: 20px;
+    background-color: #FFF; }
   app-chapter div.next, div[data-is=app-chapter] div.next {
     width: 100%;
     text-align: center; }
     app-chapter div.next > h1, div[data-is=app-chapter] div.next > h1 {
       margin-bottom: 20px;
-      color: #A56036; }
+      color: #b56969; }
     app-chapter div.next app-chapteritem, div[data-is=app-chapter] div.next app-chapteritem {
       max-width: 90%;
       text-align: center; }
 
+app-chaptereditform form > div {
+  margin-bottom: 20px; }
+  app-chaptereditform form > div input[type=text], app-chaptereditform form > div textarea {
+    width: 100%; }
+
+app-chaptereditform label {
+  display: block;
+  margin-bottom: 8px; }
+
+app-chaptereditform textarea {
+  height: 200px; }
+
+app-chaptereditform input[type=submit], app-chaptereditform input[type=button] {
+  width: 100%; }
+
 app-header {
+  position: relative;
   margin: 0;
   padding: 8px;
   display: block;
-  border-bottom: 1px dotted #A56036;
+  height: 60px;
+  background-color: #FFF;
+  border-bottom: 1px dotted #b56969;
   margin-bottom: 40px; }
   app-header h1 {
-    color: #A56036;
-    margin-bottom: 0; }
+    color: #b56969;
+    margin-bottom: 0;
+    height: 50px;
+    line-height: 50px;
+    cursor: pointer; }
+  app-header nav {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    padding: 8px;
+    background-color: #3fb0ac;
+    height: 100%;
+    transition: all 0.2s ease; }
+    app-header nav input[type=button] {
+      border: 0;
+      width: 70px; }
+    app-header nav:hover {
+      transform: scale(1.05, 1.05); }
 
 * {
   box-sizing: border-box;
@@ -227,6 +283,10 @@ app-header {
 
 html, body {
   margin: 0; }
+
+body {
+  background-image: url(https://static.pexels.com/photos/48126/books-education-school-literature-48126.jpeg);
+  background-size: cover; }
 
 div.vertical-center {
   display: table; }

@@ -2,24 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="280155be-9990-4e4b-b05c-dd65a8e274b3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SCSS/_chart.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SCSS/_misc.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SCSS/_mixins.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SCSS/main.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SCSS/parts/_Button.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SCSS/tags/Chapter/_Chapter.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SCSS/tags/Chapter/_ChapterItem.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SCSS/tags/Chapter/_Chapters.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SCSS/tags/_Error.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SCSS/tags/_Footer.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SCSS/tags/_Header.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SCSS/tags/_Stories.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SCSS/_chart.scss" afterPath="$PROJECT_DIR$/SCSS/_chart.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SCSS/_misc.scss" afterPath="$PROJECT_DIR$/SCSS/_misc.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SCSS/main.scss" afterPath="$PROJECT_DIR$/SCSS/main.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SCSS/tags/Chapter/_Chapter.scss" afterPath="$PROJECT_DIR$/SCSS/tags/Chapter/_Chapter.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SCSS/tags/Chapter/_ChapterItem.scss" afterPath="$PROJECT_DIR$/SCSS/tags/Chapter/_ChapterItem.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SCSS/tags/_Header.scss" afterPath="$PROJECT_DIR$/SCSS/tags/_Header.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TS/Adapter.ts" afterPath="$PROJECT_DIR$/TS/Adapter.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TS/Router.ts" afterPath="$PROJECT_DIR$/TS/Router.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/CSS/main.css" afterPath="$PROJECT_DIR$/static/CSS/main.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/JS/global.js" afterPath="$PROJECT_DIR$/static/JS/global.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/JS/global.js.map" afterPath="$PROJECT_DIR$/static/JS/global.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/Chapter/Chapter.tag" afterPath="$PROJECT_DIR$/tags/Chapter/Chapter.tag" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/Chapter/ChapterEdit.tag" afterPath="$PROJECT_DIR$/tags/Chapter/ChapterEdit.tag" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/Error.tag" afterPath="$PROJECT_DIR$/tags/Error.tag" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/Header.tag" afterPath="$PROJECT_DIR$/tags/Header.tag" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -35,11 +32,31 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Router.ts" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/TS/Router.ts">
+      <file leaf-file-name="Chapter.tag" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tags/Chapter/Chapter.tag">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="781">
-              <caret line="102" column="23" lean-forward="false" selection-start-line="102" selection-start-column="23" selection-end-line="102" selection-end-column="23" />
+            <state relative-caret-position="555">
+              <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_Header.scss" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/SCSS/tags/_Header.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="20" lean-forward="false" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Adapter.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TS/Adapter.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="60" lean-forward="false" selection-start-line="7" selection-start-column="60" selection-end-line="7" selection-end-column="60" />
               <folding />
             </state>
           </provider>
@@ -61,10 +78,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/TS/ErrorHandler.ts" />
-        <option value="$PROJECT_DIR$/tags/Chapter/ChapterEdit.tag" />
-        <option value="$PROJECT_DIR$/tags/Error.tag" />
         <option value="$PROJECT_DIR$/TS/Global.ts" />
-        <option value="$PROJECT_DIR$/TS/Adapter.ts" />
         <option value="$PROJECT_DIR$/tags/Chapter/ChapterItem.tag" />
         <option value="$PROJECT_DIR$/tags/Chapter/Chapters.tag" />
         <option value="$PROJECT_DIR$/tags/Stories.tag" />
@@ -72,16 +86,20 @@
         <option value="$PROJECT_DIR$/tags/Footer.tag" />
         <option value="$PROJECT_DIR$/tags/Chapter/ChapterEditForm.tag" />
         <option value="$PROJECT_DIR$/SCSS/parts/_Button.scss" />
-        <option value="$PROJECT_DIR$/SCSS/_misc.scss" />
-        <option value="$PROJECT_DIR$/tags/Header.tag" />
-        <option value="$PROJECT_DIR$/SCSS/tags/_Header.scss" />
         <option value="$PROJECT_DIR$/SCSS/tags/Chapter/_Chapters.scss" />
-        <option value="$PROJECT_DIR$/SCSS/_chart.scss" />
+        <option value="$PROJECT_DIR$/tags/Chapter/ChapterEdit.tag" />
+        <option value="$PROJECT_DIR$/SCSS/tags/Chapter/_ChapterEditForm.scss" />
+        <option value="$PROJECT_DIR$/tags/Error.tag" />
+        <option value="$PROJECT_DIR$/tags/Header.tag" />
+        <option value="$PROJECT_DIR$/TS/Router.ts" />
+        <option value="$PROJECT_DIR$/SCSS/_misc.scss" />
         <option value="$PROJECT_DIR$/SCSS/main.scss" />
+        <option value="$PROJECT_DIR$/SCSS/_chart.scss" />
         <option value="$PROJECT_DIR$/SCSS/tags/Chapter/_Chapter.scss" />
         <option value="$PROJECT_DIR$/SCSS/tags/Chapter/_ChapterItem.scss" />
+        <option value="$PROJECT_DIR$/TS/Adapter.ts" />
         <option value="$PROJECT_DIR$/tags/Chapter/Chapter.tag" />
-        <option value="$PROJECT_DIR$/TS/Router.ts" />
+        <option value="$PROJECT_DIR$/SCSS/tags/_Header.scss" />
       </list>
     </option>
   </component>
@@ -111,8 +129,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -195,6 +211,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CSS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Gutemberg-frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Gutemberg-frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="SCSS" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -241,6 +275,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -348,12 +384,14 @@
       <workItem from="1502396743918" duration="2882000" />
       <workItem from="1502444168394" duration="185000" />
       <workItem from="1503165055219" duration="7123000" />
-      <workItem from="1503318094189" duration="3878000" />
+      <workItem from="1503318094189" duration="4477000" />
+      <workItem from="1503332135346" duration="2185000" />
+      <workItem from="1503334521713" duration="458000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14068000" />
+    <option name="totallyTimeSpent" value="17310000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="30" width="1600" height="870" extended-state="6" />
@@ -389,11 +427,26 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/SCSS/main.scss">
+    <entry file="file://$PROJECT_DIR$/tags/Chapter/Chapter.tag">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TS/Router.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SCSS/main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -409,7 +462,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1575">
           <caret line="105" column="29" lean-forward="false" selection-start-line="105" selection-start-column="29" selection-end-line="105" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -417,7 +469,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -425,7 +476,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -433,7 +483,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -488,25 +537,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tags/Error.tag">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="10" column="29" lean-forward="false" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/TS/Global.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="21" column="29" lean-forward="true" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tags/Chapter/ChapterEdit.tag">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="56" lean-forward="false" selection-start-line="15" selection-start-column="56" selection-end-line="15" selection-end-column="56" />
         </state>
       </provider>
     </entry>
@@ -521,14 +556,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="112">
           <caret line="12" column="61" lean-forward="true" selection-start-line="12" selection-start-column="61" selection-end-line="12" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tags/Chapter/ChapterEditForm.tag">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="70" column="31" lean-forward="false" selection-start-line="70" selection-start-column="31" selection-end-line="70" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -536,7 +563,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -561,18 +587,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TS/Adapter.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="18" lean-forward="false" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SCSS/tags/_Footer.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -580,7 +598,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -588,7 +605,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -596,39 +612,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="48" lean-forward="false" selection-start-line="5" selection-start-column="48" selection-end-line="5" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tags/Header.tag">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="6" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SCSS/_chart.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="45" lean-forward="false" selection-start-line="31" selection-start-column="45" selection-end-line="31" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SCSS/_misc.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="21" lean-forward="true" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SCSS/main.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="29" lean-forward="false" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -636,46 +619,109 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tags/Chapter/Chapter.tag">
+    <entry file="file://$PROJECT_DIR$/tags/Chapter/ChapterEdit.tag">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="73" lean-forward="false" selection-start-line="14" selection-start-column="73" selection-end-line="14" selection-end-column="73" />
-          <folding />
+        <state relative-caret-position="45">
+          <caret line="3" column="8" lean-forward="false" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SCSS/tags/Chapter/_Chapter.scss">
+    <entry file="file://$PROJECT_DIR$/tags/Chapter/ChapterEditForm.tag">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="73" column="23" lean-forward="true" selection-start-line="73" selection-start-column="23" selection-end-line="73" selection-end-column="23" />
-          <folding />
+        <state relative-caret-position="1050">
+          <caret line="70" column="31" lean-forward="false" selection-start-line="70" selection-start-column="31" selection-end-line="70" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SCSS/tags/Chapter/_ChapterItem.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="26" lean-forward="false" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
-          <folding />
+        <state relative-caret-position="375">
+          <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SCSS/tags/_Header.scss">
+    <entry file="file://$PROJECT_DIR$/SCSS/tags/Chapter/_Chapter.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+        <state relative-caret-position="360">
+          <caret line="75" column="44" lean-forward="false" selection-start-line="75" selection-start-column="44" selection-end-line="75" selection-end-column="44" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TS/Router.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="781">
-          <caret line="102" column="23" lean-forward="false" selection-start-line="102" selection-start-column="23" selection-end-line="102" selection-end-column="23" />
+        <state relative-caret-position="767">
+          <caret line="145" column="36" lean-forward="false" selection-start-line="145" selection-start-column="36" selection-end-line="145" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SCSS/_chart.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="28" lean-forward="false" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SCSS/main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="25" lean-forward="false" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SCSS/tags/Chapter/_ChapterEditForm.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="3" lean-forward="false" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tags/Error.tag">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="23" lean-forward="false" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tags/Header.tag">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="30" lean-forward="false" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SCSS/_misc.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="107" column="0" lean-forward="true" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TS/Adapter.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="60" lean-forward="false" selection-start-line="7" selection-start-column="60" selection-end-line="7" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tags/Chapter/Chapter.tag">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SCSS/tags/_Header.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="20" lean-forward="false" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
           <folding />
         </state>
       </provider>

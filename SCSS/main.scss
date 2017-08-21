@@ -8,6 +8,7 @@
 @import "tags/Chapter/ChapterItem";
 @import "tags/Chapter/Chapters";
 @import "tags/Chapter/Chapter";
+@import "tags/Chapter/ChapterEditForm";
 
 @import 'tags/Header';
 @import 'tags/Footer';
@@ -26,6 +27,11 @@ html,body
   margin:  0;
 }
 
+body
+{
+  background-image : url(https://static.pexels.com/photos/48126/books-education-school-literature-48126.jpeg);
+  background-size: cover;
+}
 
 div.vertical-center
 {

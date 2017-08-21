@@ -4,7 +4,7 @@ app-chapteritem
   min-width: 230px;
   border:1px dotted rgba($color-front-leaf,1);
   box-shadow: $shadow-big;
-
+  background-color: $color-back-secondary;
 
   &>div
   {

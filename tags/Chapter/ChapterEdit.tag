@@ -1,6 +1,8 @@
 <app-chapteredit>
     <app-header></app-header>
-    <app-chaptereditform ref="form" chapter="{chapter}"></app-chaptereditform>
+    <div class="content">
+        <app-chaptereditform ref="form" chapter="{chapter}"></app-chaptereditform>
+    </div>
     <app-footer></app-footer>
 
     <script>

@@ -1,6 +1,8 @@
 /**
  Importation des polices
 **/
+@import "./../static/fonts/Raleway-Regular";
+@import "./../static/fonts/LobsterTwo-Regular";
 
 
 /////
@@ -14,11 +16,11 @@ $font-size-normal: 16px;
 $font-size-big : 20px;
 
 // Définition des couleurs
-$color-back-primary : #808F28;
-$color-back-secondary : #D6D2C5;
+$color-back-primary : #173e43;
+$color-back-secondary : #FFF;
 
-$color-front-wood: #A56036;
-$color-front-leaf: #94A520;
+$color-front-wood: #b56969;
+$color-front-leaf: #3fb0ac;
 $color-front-pot: #f2be8b;
 
 $color-text-primary: #191d1c;

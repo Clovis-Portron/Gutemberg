@@ -1,12 +1,42 @@
 app-header
 {
+  $height: 60px;
+  position: relative;
+
   margin: 0;
   padding: $space-small;
   display: block;
+
+  height: $height;
+  background-color: $color-back-secondary;
   h1
   {
     color: $color-front-wood;
     margin-bottom: 0;
+    height: $height - 10px;
+    line-height: $height - 10px;
+    cursor: pointer;
+  }
+
+  nav
+  {
+    position: absolute;
+    top: 0;
+    right: $space-normal;
+    padding: $space-small;
+    background-color: $color-front-leaf;
+    height: 100%;
+    input[type=button]
+    {
+      border:0;
+      width: 70px;
+    }
+
+    transition: all 0.2s ease;
+    &:hover
+    {
+      transform: scale(1.05, 1.05);
+    }
   }
   border-bottom: 1px dotted $color-front-wood;
   margin-bottom: $space-big;
