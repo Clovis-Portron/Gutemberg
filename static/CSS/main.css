@@ -154,7 +154,8 @@ app-chapteritem {
   min-width: 230px;
   border: 1px dotted #3fb0ac;
   box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.05);
-  background-color: #FFF; }
+  background-color: #FFF;
+  margin-bottom: 20px; }
   app-chapteritem > div {
     overflow: hidden; }
     app-chapteritem > div h1 {
@@ -169,7 +170,8 @@ app-chapteritem {
     margin-top: 0;
     font-family: "Raleway";
     word-break: break-all;
-    word-wrap: break-word; }
+    word-wrap: break-word;
+    white-space: pre-wrap; }
   app-chapteritem input[type=submit] {
     display: block;
     margin: auto; }
@@ -186,6 +188,7 @@ app-chapter, div[data-is=app-chapter] {
   app-chapter p, div[data-is=app-chapter] p {
     word-break: break-all;
     word-wrap: break-word;
+    white-space: pre-wrap;
     text-align: justify; }
   app-chapter div.current, div[data-is=app-chapter] div.current {
     width: 100%;
@@ -263,14 +266,19 @@ app-header {
   app-header nav {
     position: absolute;
     top: 0;
-    right: 20px;
-    padding: 8px;
+    right: 0;
     background-color: #3fb0ac;
     height: 100%;
+    vertical-align: middle;
     transition: all 0.2s ease; }
     app-header nav input[type=button] {
       border: 0;
-      width: 70px; }
+      padding: 0;
+      width: 70px;
+      font-family: "Lobster";
+      font-size: 40px; }
+      app-header nav input[type=button]:hover {
+        transform: none; }
     app-header nav:hover {
       transform: scale(1.05, 1.05); }
 
@@ -285,7 +293,7 @@ html, body {
   margin: 0; }
 
 body {
-  background-image: url(https://static.pexels.com/photos/48126/books-education-school-literature-48126.jpeg);
+  background-image: url("./../wallpaper.jpeg");
   background-size: cover; }
 
 div.vertical-center {

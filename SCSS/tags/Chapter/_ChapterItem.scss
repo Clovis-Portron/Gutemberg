@@ -5,6 +5,7 @@ app-chapteritem
   border:1px dotted rgba($color-front-leaf,1);
   box-shadow: $shadow-big;
   background-color: $color-back-secondary;
+  margin-bottom: $space-normal;
 
   &>div
   {
@@ -32,6 +33,7 @@ app-chapteritem
     font-family: $font-primary;
     word-break: break-all;
     word-wrap: break-word;
+    white-space: pre-wrap;
   }
 
   input[type=submit]

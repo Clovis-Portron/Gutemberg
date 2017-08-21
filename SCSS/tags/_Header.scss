@@ -22,14 +22,24 @@ app-header
   {
     position: absolute;
     top: 0;
-    right: $space-normal;
-    padding: $space-small;
+    right: 0;
     background-color: $color-front-leaf;
+
     height: 100%;
+    vertical-align: middle;
     input[type=button]
     {
       border:0;
+      padding: 0;
       width: 70px;
+      font-family: $font-secondary;
+      font-size: 40px;
+
+      &:hover
+      {
+        transform: none;
+      }
+
     }
 
     transition: all 0.2s ease;
