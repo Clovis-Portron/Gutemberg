@@ -1,0 +1,40 @@
+@import 'chart';
+@import 'mixins';
+
+@import 'misc';
+
+@import 'parts/Button';
+
+@import "tags/Chapter/ChapterItem";
+@import "tags/Chapter/Chapters";
+@import "tags/Chapter/Chapter";
+
+@import 'tags/Header';
+@import 'tags/Footer';
+@import "tags/Error";
+*
+{
+  box-sizing: border-box;
+  font-size : $font-size-normal;
+  color: $color-text-primary;
+  font-family: $font-primary;
+  z-index :0;
+}
+
+html,body
+{
+  margin:  0;
+}
+
+
+div.vertical-center
+{
+  display: table;
+
+  &>*
+  {
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
+

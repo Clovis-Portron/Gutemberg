@@ -56,6 +56,11 @@ class Router
         var request = Promise.all([requestChapter, requestNext]);
         request.then(function(responses : any)
         {
+            if(responses[0].data == null)
+            {
+                route("/error/404");
+                return;
+            }
             var opts : any  = {
                 "chapter" : responses[0].data,
                 "next" : null
@@ -92,6 +97,11 @@ class Router
         });
         request.then(function(response : any)
         {
+            if(response.data == null)
+            {
+                route("/error/404");
+                return;
+            }
             App.changePage("app-chapteredit", {
                 "chapter" : response.data
             });
@@ -125,6 +135,10 @@ class Router
         route("/chapter/*", self.showChapter);
 
 
+        route("/error/404", function()
+        {
+            self.error(encodeURI("La page demandée est introuvable."));
+        });
         route("/error/*", self.error);
         route("/error", self.error);
 

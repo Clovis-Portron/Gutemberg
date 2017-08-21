@@ -244,6 +244,10 @@ class Router {
         });
         var request = Promise.all([requestChapter, requestNext]);
         request.then(function (responses) {
+            if (responses[0].data == null) {
+                route("/error/404");
+                return;
+            }
             var opts = {
                 "chapter": responses[0].data,
                 "next": null
@@ -272,6 +276,10 @@ class Router {
             "id": id
         });
         request.then(function (response) {
+            if (response.data == null) {
+                route("/error/404");
+                return;
+            }
             App.changePage("app-chapteredit", {
                 "chapter": response.data
             });
@@ -294,6 +302,9 @@ class Router {
         route("/chapter/add", self.addChapter);
         route("/chapter/edit/*", self.editChapter);
         route("/chapter/*", self.showChapter);
+        route("/error/404", function () {
+            self.error(encodeURI("La page demandée est introuvable."));
+        });
         route("/error/*", self.error);
         route("/error", self.error);
     }

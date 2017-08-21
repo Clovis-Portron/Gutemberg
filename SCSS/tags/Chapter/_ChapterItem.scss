@@ -1,0 +1,42 @@
+app-chapteritem
+{
+  display: inline-block;
+  min-width: 230px;
+  border:1px dotted rgba($color-front-leaf,1);
+  box-shadow: $shadow-big;
+
+
+  &>div
+  {
+    overflow: hidden;
+    h1
+    {
+      text-align: left;
+      padding: $space-small;
+      background-color: $color-back-primary;
+      color: $color-text-secondary;
+      border-bottom:1px solid rgba($color-front-leaf,0.3);
+      //box-shadow: $shadow-normal;
+    }
+
+
+    &>div
+    {
+      padding: $space-small;
+    }
+  }
+
+  p
+  {
+    margin-top: 0;
+    font-family: $font-primary;
+    word-break: break-all;
+    word-wrap: break-word;
+  }
+
+  input[type=submit]
+  {
+    display: block;
+    margin: auto;
+  }
+}

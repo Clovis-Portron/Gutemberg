@@ -1,0 +1,168 @@
+@import 'chart';
+
+.invisible
+{
+  display: none !important;
+}
+
+.content
+{
+        min-width: 320px;
+        max-width: 900px;
+        width: 80%;
+        margin: auto;
+}
+
+@keyframes loading {
+    0%   {left: -300px; background-color: $color-front-pot;}
+    50% { left: 150%; background-color: $color-front-pot;}
+    100% {left: -300px; background-color: $color-front-pot;}
+}
+
+
+div#loading
+{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(50,50,50,0.5);
+
+  &:before{
+      content : "";
+      display: block;
+      width: 300px;
+      height: 3px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      
+      background-color: $color-front-pot;
+      
+      animation: loading 2s infinite;
+
+  }
+}
+
+div#popup
+{
+  box-sizing: border-box;
+  position: fixed;
+  min-width: 320px;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  background-color: $color-back-primary;
+  border-radius: 2px;
+  z-index: 1;
+  border: 1px solid $color-front-pot;
+  box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.2);
+  padding: $space-normal;
+  padding-top: $space-big+$space-normal;
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-height: 90%;
+
+  &::after
+  {
+    position: absolute;
+    box-sizing: border-box;
+    
+    top: 0;
+    left: 0;
+    width: 100%;
+    content: attr(data-name);
+    font-family: $font-primary;
+    padding: $space-small;
+    font-size: $font-size-big;
+    background-color: $color-front-pot;
+    color: $color-back-primary;
+  }
+
+  div.close
+  {
+      content: "🞩";
+      display: inline-block;
+      position: absolute;
+      z-index : 2;
+      display: inline-block;
+      top: 0;
+      right: 0;
+      font-size: $font-size-big;
+      text-align: right;
+      padding-top: $space-small;
+      padding-right: $space-small;
+      color: $color-back-primary;
+      cursor: pointer;
+  }
+}
+
+h1
+{
+  font-size: $font-size-big;
+  font-family: $font-secondary;
+  margin: 0;
+  margin-bottom: $space-small;
+
+  //background-color: $color-front-straw;
+
+  //color: $color-back-primary;
+}
+
+h2
+{
+  font-size: $font-size-big;
+  margin-bottom: $space-normal;
+}
+
+section
+{
+  border-bottom: 2px dotted $color-front-pot;
+  margin-bottom: $space-normal;
+}
+
+img.profile
+{
+  $side: 75px;
+  border-radius: 100%;
+  width: $side;
+  height: $side;
+}
+
+.price
+{
+    $side: 50px;
+
+    display: inline-block;
+    position: relative;
+
+    width: $side;
+    height: $side;
+
+    background-color: $color-front-pot;
+
+    color: $color-back-primary;
+    border-radius: 100%;
+
+    line-height: $side;
+
+    text-align: center;
+
+    vertical-align: top;
+
+    margin-left: $space-small;
+}
+
+
+p
+{
+  font-family: $font-primary;
+}
+
+
+
+
+
+

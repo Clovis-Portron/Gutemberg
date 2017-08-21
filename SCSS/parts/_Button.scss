@@ -1,0 +1,15 @@
+input[type=button], button, input[type=submit]
+{
+  background-color: $color-front-leaf;
+  color: $color-text-secondary;
+  border-radius: 2px;
+  border: 2px solid lighten($color-front-leaf, 9);
+  padding: $space-small;
+  cursor:pointer;
+
+  transition: all 0.2s ease;
+  &:hover
+  {
+    transform: scale(1.05,1.05);
+  }
+}

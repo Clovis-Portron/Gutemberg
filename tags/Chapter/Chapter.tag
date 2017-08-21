@@ -1,9 +1,9 @@
 <app-chapter>
     <app-header></app-header>
-    <div class="content">
+    <div >
         <div class="current">
-            <div if="{ chapter.Chapter_id != null }">
-                <input type="button" value="Lire le chapitre précédent" onclick="{ showPrevious }">
+            <div >
+                <input if="{ chapter.Chapter_id != null }" type="button" value="Précédent" onclick="{ showPrevious }">
             </div>
             <div>
                 <h1>{ chapter.name }</h1>
@@ -11,8 +11,8 @@
                     { chapter.username }
                 </span>
             </div>
-            <div if="{ next != null }">
-                <input type="button" value="Lire la suite" onclick="{ showNext }">
+            <div >
+                <input if="{ next != null }" type="button" value="Suivant" onclick="{ showNext }">
             </div>
         </div>
         <div>
@@ -20,20 +20,13 @@
                 { chapter.content }
             </p>
         </div>
-        <div class="next">
-            <div if="{ next != null }">
-                <div>{ next.name }</div>
-                <span>
-                    { next.username }
-                </span>
-                <div>
-                    <input type="button" value="Lire la suite" onclick="{ showNext }">
-                </div>
-            </div>
-            <div if="{ next == null }">
-                <input type="button" value="Ecrire la suite" onclick="{ createNext }">
-            </div>
-
+        <div class="next" if="{ next != null }">
+            <h1>Chapitre suivant:</h1>
+            <app-chapteritem chapter="{ next }"></app-chapteritem>
+        </div>
+        <div class="next" if="{ next == null }">
+            <h1>L'histoire s'arrete la pour le moment</h1>
+            <input type="button" value="Ecrire la suite" onclick="{ createNext }">
         </div>
     </div>
     <app-footer></app-footer>
